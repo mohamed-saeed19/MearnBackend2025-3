@@ -13,7 +13,7 @@ describe("Test ToDo Routes", () => {
     userToken = res.body.data;
   });
   afterAll(async()=>{
-   await clearDatabase()
+  await clearDatabase()
   })
   it("test req(/todo)", async () => {
     let res = await req.get("/todo");
